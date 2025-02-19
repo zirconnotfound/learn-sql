@@ -21,5 +21,7 @@
     - Aggregate: MIN/MAX, AVG/SUM, COUNT
     - Navigation: FIRST_VALUE, LAST_VALUE, LEAD, LAG
     - Numbering: ROW_NUMBER, RANK
+  - UNNEST
 
+- Nested = object, repeated = array
 - CTE: table tạm thời, hiệu lực trong phạm vi query đấy
