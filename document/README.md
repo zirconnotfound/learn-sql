@@ -1,0 +1,25 @@
+- Client -> project -> dataset -> table
+- Schema: cấu trúc của table
+- Query chứa GROUP BY thì các phần tử SELECT phải được "aggregated" bởi các lệnh COUNT, SUM,... hoặc là nằm trong GROUP BY
+- Query cơ bản:
+
+  - SELECT, FROM, WHERE, GROUP BY, HAVING
+  - COUNT, SUM
+  - WITH ... AS: chia query thành các phần dễ đọc
+  - EXTRACT (... FROM ...): lấy ngày, tháng, giờ,... từ 1 column
+  - JOIN: ghép (theo chiều ngang)
+    - INNER JOIN: lấy column của cả 2
+    - LEFT JOIN: lấy tất cả rows của table trái và ghép với rows của table phải
+    - RIGHT JOIN:
+    - FULL JOIN: lấy tất cả rows của cả 2 và ghép
+  - UNION: ghép (theo chiều dọc), type của 2 column phải giống nhau
+    - UNION ALL: thêm tất cả, kể cả giá trị trùng lặp
+    - UNION DISTINCT: bỏ các giá trị trùng lặp
+  - %: wildcard
+  - ...(...) OVER (PARTITION BY ..., ORDER BY ..., {window function})
+  - Analytic function:
+    - Aggregate: MIN/MAX, AVG/SUM, COUNT
+    - Navigation: FIRST_VALUE, LAST_VALUE, LEAD, LAG
+    - Numbering: ROW_NUMBER, RANK
+
+- CTE: table tạm thời, hiệu lực trong phạm vi query đấy
